@@ -138,7 +138,7 @@ def find_rootrepos(df, cache='cache'):
     L = []
     indicies = 0
 
-    for name in repo_names[:50]:
+    for name in repo_names:
 
         requests_cache.install_cache(cache)
         url = 'https://github.com/%s/contributors_size' % name
