@@ -156,7 +156,7 @@ def find_rootrepos(df, cache='cache'):
 
         indicies += 1
 
-        return df_sub.iloc[L]
+    return df_sub.iloc[L]
 
 # RESOURCES
 # https://stackoverflow.com/questions/7656754/place-a-0-in-front-of-numbers-in-a-list-if-they-are-less-than-ten-in-python
