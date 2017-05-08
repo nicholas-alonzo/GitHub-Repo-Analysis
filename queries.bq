@@ -1,0 +1,7 @@
+SELECT content, sample_repo_name FROM [bigquery-public-data:github_repos.sample_contents] 
+WHERE id in (select id from [bigquery-public-data:github_repos.sample_files] where REGEXP_MATCH( path , r'(?i)\b(README.md)\b' )) 
+and REGEXP_MATCH(content, r'(?i)\b(unmaintained sample_repo_name |deprecated|abandoned)\b') 
+limit 10
+
+#https://github.com/Stichoza/skype-status-php
+#THIS PACKAGE DOES NOT WORK ANYMORE. Skype deprecated its XML response of status codes
