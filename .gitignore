@@ -2,3 +2,7 @@
 *.csv
 *.gz
 *.db
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+.DS_Store?
