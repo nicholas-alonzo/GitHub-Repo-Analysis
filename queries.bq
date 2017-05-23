@@ -3,11 +3,18 @@ WHERE id in (select id from [bigquery-public-data:github_repos.sample_files] whe
 and REGEXP_MATCH(content, r'(?i)\b(unmaintained sample_repo_name |deprecated|abandoned)\b') 
 limit 10
 
-#https://github.com/Stichoza/skype-status-php
-#THIS PACKAGE DOES NOT WORK ANYMORE. Skype deprecated its XML response of status codes
-
 #events count
 SELECT STRFTIME_UTC_USEC(created_at, "%Y-%m-%d") AS times ,type, COUNT(*) AS counts
-FROM [githubarchive:year.2016]
+FROM
+[githubarchive:year.2011],[githubarchive:year.2012],[githubarchive:year.2013],
+[githubarchive:year.2014],[githubarchive:year.2015],[githubarchive:year.2016]
 GROUP BY 1, 2
 ORDER BY 1
+
+SELECT type, COUNT(*) as counts
+FROM 
+[githubarchive:year.2011],[githubarchive:year.2012],[githubarchive:year.2013],
+[githubarchive:year.2014],[githubarchive:year.2015],[githubarchive:year.2016]
+GROUP BY 1
+ORDER BY 2 DESC
+
