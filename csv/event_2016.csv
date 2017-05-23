@@ -1,0 +1,15 @@
+type,counts
+PushEvent,164926422
+CreateEvent,43844824
+WatchEvent,26168446
+IssueCommentEvent,25754250
+PullRequestEvent,17864238
+IssuesEvent,12808627
+ForkEvent,9538608
+DeleteEvent,7670885
+PullRequestReviewCommentEvent,5589483
+GollumEvent,2290373
+MemberEvent,1926744
+ReleaseEvent,1115520
+CommitCommentEvent,1045209
+PublicEvent,281400
