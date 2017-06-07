@@ -17,13 +17,13 @@ __GitHub data and where to obtain it__
 - [BigQuery](https://bigquery.cloud.google.com/dataset/bigquery-public-data:github_repos)  
 
 __Methodology__  
-For full details refer to [Sampling Process](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/SamplingProcess.ipynb) on how repositories were selected and [BigQuery Processing](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/BigQueryProcessing_na.ipynb) on how events wer processed from the Event Archive through BigQuery.
+For full details refer to [Sampling Process](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/SamplingProcess.ipynb) on how repositories were selected and [BigQuery Processing](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/BigQueryProcessing_na.ipynb) on how events were processed from the Event Archive through BigQuery.
 
 __Event Exploration and Analysis__  
 The analyses can be found [here](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/Event-Exploration_na.ipynb) by Nicholas Alonzo and [here](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/Event-Exploration_ql.ipynb) by Quan Li.
 
 __Data Files__  
-All data files referenced in Sampling Process and BigQuery Processing can be downloaded from [here](https://mega.nz/#F!LZ0jQQDZ!K4p6b9afXmBYZ2rDhyv5zQ).
+All data files referenced in Sampling Process and BigQuery Processing can be downloaded from [here](https://mega.nz/#F!LZ0jQQDZ!K4p6b9afXmBYZ2rDhyv5zQ). The most important downloads are github.db used in the analyses and GitHub-Diagram.png to view the relational database schema.
 
 ## Issues: Characteristics and Closing Efficiency 
 1. What are the most common words shared among issue titles?  
