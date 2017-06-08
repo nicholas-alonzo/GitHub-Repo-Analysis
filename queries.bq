@@ -18,3 +18,10 @@ FROM
 GROUP BY 1
 ORDER BY 2 DESC
 
+
+SELECT JSON_EXTRACT_SCALAR(payload, '$.action') type, count(*) counts
+FROM
+[githubarchive:year.2011],[githubarchive:year.2012],[githubarchive:year.2013],
+[githubarchive:year.2014],[githubarchive:year.2015],[githubarchive:year.2016]
+WHERE type='IssuesEvent'
+GROUP BY 1
