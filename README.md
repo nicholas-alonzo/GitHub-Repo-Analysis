@@ -32,8 +32,9 @@ All data files referenced in Sampling Process and BigQuery Processing can be dow
     - Show with a histogram or density plot (Finished)
 3. What kind of labels are attached to issues most frequently? (Q - HP)  
     - Show with a barplot (Finished)
-    - Are issues with labels closed more quickly than those unlabeled (not including reopened issues)? (Split the data by labeled and unlabeled and then find out how quickly they are closed for both data sets)
-4. What are the most common ways to write the beginning of an issue across all issues when they are first opened if any? (Q - LP)      
+    - Are issues with labels closed more quickly than those unlabeled (not including reopened issues)? (Split the data by labeled and unlabeled and then find out how quickly they are closed for both data sets) (Finished, no meaning)
+4. What are the most common ways to write the beginning of an issue across all issues when they are first opened if any? (Q - LP)     
+    - Are issues with labels closed more quickly than those unlabeled (not including reopened issues)? (Split the data by labeled and unlabeled and then find out how quickly they are closed for both data sets) f
     - Use the first 5 words as the "beginning of an issue" (refer [here](https://medium.com/google-cloud/analyzing-github-issues-and-comments-with-bigquery-c41410d3308))
     - Which ones get closed more if any?
 5. What percentage of issues are reopened per repo? (Q - LP)  
