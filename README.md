@@ -27,20 +27,20 @@ All data files referenced in Sampling Process and BigQuery Processing can be dow
 
 ## Issues: Characteristics and Closing Efficiency 
 1. What are the most common words shared among issue titles when they are first opened? (Q - HP)
-  - Show using a word cloud or barplot
+  - Show using a word cloud or barplot(Finished)
 2. How quickly do issues close (not including reopened issues)? (Q - HP)
-  - Show with a histogram or density plot
-  - Does the owner typically close them per repo?
-  - Which ones are outliers / anomalies?
+  - Show with a histogram or density plot(Finished)
+  - Does the owner typically close them per repo?(meaningless)
+  - Which ones are outliers / anomalies?(meaningless)
 3. What kind of labels are attached to issues most frequently? (Q - HP)
-  - Show with a barplot
-  - Are issues with labels closed more quickly than those unlabeled (not including reopened issues)?  
-4. What are the most common ways to write the beginning of an issue across all issues when they are first opened if any? (Q - LP)
-  - Use the first 5 words as the "beginning of an issue"
-  - Which ones get closed more if any?  
+  - Show with a barplot(Finished)
+  - Are issues with labels closed more quickly than those unlabeled (not including reopened issues)? (cannot figure out)
+4. What are the most common ways to write the beginning of an issue across all issues when they are first opened if any? (Q - LP) 
+  - Use the first 5 words as the "beginning of an issue"(cannot figure out)
+  - Which ones get closed more if any? (cannot figure out)
 5. What percentage of issues are reopened per repo? (Q - LP)
-  - Show with a barplot
-  - What are the top 3 repos that get more reopened issues and what is their repo description?
+  - Show with a barplot (Finished)
+  - What are the top 3 repos that get more reopened issues and what is their repo description?(meaningless)
 
 ## Forks: How are they being used?
 1. What percentage of forks are pull requests? are not pull requests? (N - HP)
@@ -50,7 +50,7 @@ All data files referenced in Sampling Process and BigQuery Processing can be dow
 
 ## Pull Requests: Characteristics and Successful Merges
 1. What are the most common words shared among the titles of merged pull requests? (Q - HP)
-  - Show with a barplot or word cloud
+  - Show with a barplot or word cloud(Finished)
 
 2. Are merged pull requests typically open by core contributors or external contributors? (N - HP)
 
