@@ -13,7 +13,7 @@ GitHub projects listed on [Google Scholar](https://scholar.google.com/scholar?q=
 
 __GitHub data and where to obtain it__
 - [API](https://developer.github.com/v3/)
-- [Event Archive](https://www.githubarchive.org/) or [Event Archive through BigQuery]()
+- [Event Archive](https://www.githubarchive.org/) or [Event Archive through BigQuery](https://bigquery.cloud.google.com/dataset/githubarchive:year)
 - [BigQuery](https://bigquery.cloud.google.com/dataset/bigquery-public-data:github_repos)  
 
 __Methodology__  
@@ -26,38 +26,33 @@ __Data Files__
 All data files referenced in Sampling Process and BigQuery Processing can be downloaded from [here](https://mega.nz/#F!LZ0jQQDZ!K4p6b9afXmBYZ2rDhyv5zQ). The most important downloads are github.db used in the analyses and GitHub-Diagram.png to view the database schema.
 
 ## Issues: Characteristics and Closing Efficiency 
-1. What are the most common words shared among issue titles when they are first opened? (Q - HP)
-  - Show using a word cloud or barplot(Finished)
-2. How quickly do issues close (not including reopened issues)? (Q - HP)
-  - Show with a histogram or density plot(Finished)
-  - Does the owner typically close them per repo?(meaningless)
-  - Which ones are outliers / anomalies?(meaningless)
-3. What kind of labels are attached to issues most frequently? (Q - HP)
-  - Show with a barplot(Finished)
-  - Are issues with labels closed more quickly than those unlabeled (not including reopened issues)? (cannot figure out)
-4. What are the most common ways to write the beginning of an issue across all issues when they are first opened if any? (Q - LP) 
-  - Use the first 5 words as the "beginning of an issue"(cannot figure out)
-  - Which ones get closed more if any? (cannot figure out)
-5. What percentage of issues are reopened per repo? (Q - LP)
-  - Show with a barplot (Finished)
-  - What are the top 3 repos that get more reopened issues and what is their repo description?(meaningless)
+1. What are the most common words shared among issue titles when they are first opened? (Q - HP)  
+    - Show using a word cloud or barplot (Finished)
+2. How quickly do issues close (not including reopened issues)? (Q - HP)  
+    - Show with a histogram or density plot (Finished)
+3. What kind of labels are attached to issues most frequently? (Q - HP)  
+    - Show with a barplot (Finished)
+    - Are issues with labels closed more quickly than those unlabeled (not including reopened issues)? (Split the data by labeled and unlabeled and then find out how quickly they are closed for both data sets)
+4. What are the most common ways to write the beginning of an issue across all issues when they are first opened if any? (Q - LP)      
+    - Use the first 5 words as the "beginning of an issue" (refer [here](https://medium.com/google-cloud/analyzing-github-issues-and-comments-with-bigquery-c41410d3308))
+    - Which ones get closed more if any?
+5. What percentage of issues are reopened per repo? (Q - LP)  
+    - Show with a barplot / pie chart (Finished)
 
 ## Forks: How are they being used?
-1. What percentage of forks are pull requests? are not pull requests? (N - HP)
-  - How long does it take for a fork to become an open pull request on average?
-2. What percent of fork owners have starred the repo? haven't starred the repo? (N - HP)
-  - Do they typically star the repo before they fork it or after?
+1. What percentage of forks are pull requests? are not pull requests? (N - HP)  
+    - How long does it take for a fork to become an open pull request? (Finished)
+2. What percent of fork owners have starred the repo? haven't starred the repo? (N - HP)  
+    - Do they typically star the repo before they fork it or after?
 
 ## Pull Requests: Characteristics and Successful Merges
-1. What are the most common words shared among the titles of merged pull requests? (Q - HP)
-  - Show with a barplot or word cloud(Finished)
-
-2. Are merged pull requests typically open by core contributors or external contributors? (N - HP)
+1. What are the most common words shared among the titles of merged pull requests? (Q - HP)  
+    - Show with a barplot or word cloud (Finished)
+2. Are merged pull requests typically open by core contributors or external contributors? (N - HP) (Finished)
 
 ## Issues and Pull Requests
 1. What does the relationship of issues opened and opened pull requests look like? (N - HP)
-  - Show with a scatter plot
-  - Which ones are outliers / anomalies?
-2. What percentage of referenced issues are closed by a pull request? not closed? (N - HP)
-  - Was the issue opened by the person who opened the pull request?
-  - Are the issues resolved more by core contributors or external contributors?
+    - Show with a scatter plot (Finished)
+2. What percentage of pull requests attempt to close referenced issues?? (N - HP)
+    - Was the issue opened by the person who opened the pull request?
+    - Are the issues resolved more by core contributors or external contributors?
