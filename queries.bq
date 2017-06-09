@@ -18,3 +18,28 @@ FROM
 GROUP BY 1
 ORDER BY 2 DESC
 
+
+SELECT JSON_EXTRACT_SCALAR(payload, '$.action') type, count(*) counts
+FROM
+[githubarchive:year.2011],[githubarchive:year.2012],[githubarchive:year.2013],
+[githubarchive:year.2014],[githubarchive:year.2015],[githubarchive:year.2016]
+WHERE type='IssuesEvent'
+GROUP BY 1
+
+
+SELECT  STRFTIME_UTC_USEC(created_at, "%Y-%m-%d") AS times, JSON_EXTRACT_SCALAR(payload, '$.action') type, count(*) counts
+FROM
+[githubarchive:year.2011],[githubarchive:year.2012],[githubarchive:year.2013],
+[githubarchive:year.2014],[githubarchive:year.2015],[githubarchive:year.2016]
+WHERE type='IssuesEvent'
+GROUP BY 1,2
+ORDER BY 1
+
+
+SELECT repo.name, JSON_EXTRACT_SCALAR(payload, '$.action') type, count(*) counts
+FROM
+[githubarchive:day.20160501]
+WHERE type='IssuesEvent'
+GROUP BY 1,2
+ORDER BY 3 DESC
+limit 10
