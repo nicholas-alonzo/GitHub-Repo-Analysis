@@ -56,4 +56,4 @@ All data files referenced in Sampling Process and BigQuery Processing can be dow
 2. What percentage of pull requests attempt to close referenced issues?? (N - HP)
     - Was the issue opened by the person who opened the pull request?
     - Are the issues resolved more by core contributors or external contributors?
-## Final Report Link (refer [here](https://goo.gl/HQHdrx))
+## Final Report Link ([here](https://goo.gl/HQHdrx))
