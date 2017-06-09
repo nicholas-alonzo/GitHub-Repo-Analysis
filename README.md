@@ -17,13 +17,13 @@ __GitHub data and where to obtain it__
 - [BigQuery](https://bigquery.cloud.google.com/dataset/bigquery-public-data:github_repos)  
 
 __Methodology__  
-For full details refer to [Sampling Process](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/SamplingProcess.ipynb) on how repositories were selected and [BigQuery Processing](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/BigQueryProcessing_na.ipynb) on how events were processed into a database.
+For full details refer to [Sampling Process](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/SamplingProcess.ipynb) on how repositories were selected and [BigQuery Processing](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/BigQueryProcessing_na.ipynb) on how events were processed into a sqlite database.
 
 __Event Exploration and Analysis__  
 The analyses can be found [here](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/Event-Exploration_na.ipynb) by Nicholas Alonzo and [here](https://github.com/nicholas-alonzo/GitHub-Repo-Analysis/blob/master/Event-Exploration_ql.ipynb) by Quan Li.
 
 __Data Files__  
-All data files referenced in Sampling Process and BigQuery Processing can be downloaded from [here](https://mega.nz/#F!LZ0jQQDZ!K4p6b9afXmBYZ2rDhyv5zQ). The most important downloads are github.db used in the analyses and GitHub-Diagram.png to view the database schema.
+All data files referenced in Sampling Process and BigQuery Processing can be downloaded [here](https://mega.nz/#F!LZ0jQQDZ!K4p6b9afXmBYZ2rDhyv5zQ). The most important downloads are github.db used in the analyses and GitHub-Diagram.png to view the database schema.
 
 ## Issues: Characteristics and Closing Efficiency 
 1. What are the most common words shared among issue titles when they are first opened? (Q - HP)  
@@ -48,12 +48,16 @@ All data files referenced in Sampling Process and BigQuery Processing can be dow
 ## Pull Requests: Characteristics and Successful Merges
 1. What are the most common words shared among the titles of merged pull requests? (Q - HP)  
     - Show with a barplot or word cloud (Finished)
-2. Are merged pull requests typically open by core contributors or external contributors? (N - HP) (Finished)
+2. Are pull requests typically open by core contributors or external contributors? (N - HP) (Finished)
+    - What percent of pull requests are merged and not merged?
+    - Are merged pull requests typically open by core contributors or external contributors?
 
 ## Issues and Pull Requests
-1. What does the relationship of issues opened and opened pull requests look like? (N - HP)
+1. What does the relationship of opened issues and pull requests look like? (N - HP)
     - Show with a scatter plot (Finished)
-2. What percentage of pull requests attempt to close referenced issues?? (N - HP)
-    - Was the issue opened by the person who opened the pull request?
+2. What percentage of pull requests attempt to close referenced issues? (N - HP)
+    - What percentage of issues referenced in the pull request were opened by the same user?
     - Are the issues resolved more by core contributors or external contributors?
+    - What is the relative time between when a pull request is opened and references an issue?
+    
 ## Final Report Link ([here](https://goo.gl/HQHdrx))
