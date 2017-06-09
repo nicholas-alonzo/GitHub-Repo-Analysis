@@ -27,7 +27,7 @@ All data files referenced in Sampling Process and BigQuery Processing can be dow
 
 ## Issues: Characteristics and Closing Efficiency 
 1. What are the most common words shared among issue titles when they are first opened? (Q - HP)  
-    - Show using a word cloud or barplot (Finished)
+    - Show using a word cloud or barplot (Finished)
 2. How quickly do issues close (not including reopened issues)? (Q - HP)  
     - Show with a histogram or density plot (Finished)
 3. What kind of labels are attached to issues most frequently? (Q - HP)  
